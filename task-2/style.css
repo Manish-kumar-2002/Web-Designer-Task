@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f6f6f6;
+}
+
+.morphing-spinner {
+  width: 60px;
+  height: 60px;
+  background-color: #4CAF50;
+  animation: morph-spinner 3s infinite ease-in-out;
+}
+
+@keyframes morph-spinner {
+  0%, 33% {
+    border-radius: 50%;
+    clip-path: none;
+    transform: scale(1);
+  }
+  16% {
+    transform: scale(1.1);
+  }
+  34%, 66% {
+    border-radius: 0;
+    clip-path: none;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  67%, 100% {
+    border-radius: 0;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: scale(1);
+  }
+  83% {
+    transform: scale(1.1);
+  }
+}
