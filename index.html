@@ -15,7 +15,7 @@
       li {
         list-style: none;
       }
-      a{
+      a {
         text-decoration: none;
       }
 
@@ -37,30 +37,56 @@
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
+      h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        transition: all 0.5s;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+      }
       ul li a {
         display: block;
-        padding: 10px;
+        padding: 8px;
         border: 1px solid #0086f7;
         border-radius: 5px;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 12px;
         color: #fff;
         text-align: center;
         background-color: #0086f7;
         transition: all 0.5s;
       }
-      ul li a:hover {
-        border: 1px solid #0086f7;
-        color: #0086f7;
-        background-color: #fff;
-      }
+
       ul li:not(:last-child) a {
         margin-bottom: 10px;
+      }
+
+      @media (min-width: 768px) {
+        .wrapper {
+          padding: 20px;
+          border-radius: 10px;
+        }
+
+        h1 {
+          font-size: 24px;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+        }
+        ul li a {
+          padding: 10px;
+          font-size: 14px;
+        }
+        ul li a:hover {
+          border: 1px solid #0086f7;
+          color: #0086f7;
+          background-color: #fff;
+        }
       }
     </style>
   </head>
   <body>
     <div class="wrapper">
+      <h1>Choose the Task?</h1>
       <ul>
         <li><a href="task-1/index.html">Task 1</a></li>
         <li><a href="task-2/index.html">Task 2</a></li>
