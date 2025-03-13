@@ -5,7 +5,7 @@ const itemList = document.getElementById("itemList");
 const searchInput = document.getElementById("searchInput");
 
 function displayItems(filteredItems) {
-  const fragment = document.createDocumentFragment();
+  const fragment = document.createDocumentFragment(); //document.createDocumentFragment() ek temporary container hai jo DOM update optimize karta hai, taki multiple elements ek sath add ho sake bina baar-baar reflow trigger kiye. 🚀
 
   filteredItems.forEach((item) => {
     const listItem = document.createElement("li");
